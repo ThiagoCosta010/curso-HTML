@@ -17,8 +17,14 @@
             border: 1px solid black;
             padding: 10px;
         }
-        thead{
-            background-color: gray;
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: #383838;
             color: white;
         }
         td.num{
@@ -39,10 +45,11 @@
                TR, TD, TH
     -->
     <table>
+        <caption>população das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -58,12 +65,24 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santá Caratina</td>
+                <td class="num">7.164.788   </td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>210.147.125</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
 
         </tfoot>
