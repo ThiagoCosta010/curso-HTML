@@ -2,6 +2,6 @@
 
 /*Aparelho em pé (portrait) */
 body{
-    background: url('../img/cev-portrait.jpg');
+    background-image: url('../img/cev-portrait.jpg');
     background-position: center bottom;
 }
