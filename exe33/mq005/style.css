@@ -5,40 +5,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+body, html{
+    background-color: lightgray;
+}
 header{
-    width: 100vw;
     background-color: gray;
 }
 header > h1{
+    padding: 10px;
     text-align: center;
 }
-header > ul {
-    display: flex;
-    list-style: none;
+menu{
+    display: block;
 }
-header > ul > li > a {
-
+menu > ul{
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
     color: white;
-    background-color: #535151;
-    padding: 8px;
+    border-top: 2px solid gray;
 }
-header > ul > li{
-    margin: 3px;
-}
-body{
-    background-color: #a19f9f;
+menu > ul > li > a:hover{
+    background-color: gray;
 }
 main{
-    padding: 10px;
-    border-radius: 5px;
-    width: 40vw;
-    margin: 3px auto;
+    width: 90vw;
     background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-main > p {
-    padding: 8px;
+article > h2{
+    padding-bottom: 20px;
 }
-main > h1 {
-    margin: 10px;
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
