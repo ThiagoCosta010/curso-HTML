@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
 
@@ -65,6 +66,13 @@
     </main>
 
     <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                items.style.display = 'block'
+            }else{
+                items.style.display = 'none'
+            }
+        }
         function clickMenu(){
             if(items.style.display == 'block'){
                 items.style.display = 'none'
@@ -72,6 +80,7 @@
                 items.style.display = 'block'
             }
         }
+
     </script>
 
     
