@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root{
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#5f2c82, #49a09d);
+}
+main{
+    height: 40vh;
+    width: 50vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+div#imagem{
+    background: url('../img/building.jpg') center center;
+    width: 100vw;
+
+}
